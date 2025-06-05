@@ -9,7 +9,7 @@ const server = http.createServer(app);
 // 1️⃣ Socket.io server
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3001", // Next.js frontend çalıştığı port
+    origin: "https://meeting-video-call.netlify.app", // Next.js frontend çalıştığı port
     methods: ["GET", "POST"],
   },
 });
